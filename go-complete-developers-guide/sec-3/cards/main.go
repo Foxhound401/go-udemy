@@ -5,12 +5,8 @@ import "fmt"
 var deckSize int
 
 func main() {
-	var card string = "Ace of Spades"
+	var card string = newCard()
 	card = "Five of Diamonds"
-
-	var card2 string
-
-	card2 = "cool you can"
 
 	// var cars int = 100
 	// var space_in_a_car float32 = 4.0
@@ -38,5 +34,8 @@ func main() {
 	// fmt.Printf("Can I do %s variable in the middle, we have %d passengers and %d cars\n", multiple, passengers, cars)
 
 	fmt.Println(card)
-	fmt.Println(card2)
+}
+
+func newCard() string {
+	return "Five of Diamonds"
 }
